@@ -19,9 +19,9 @@ jobs:
         password: ${{ secrets.PASSWORD }}
     
     - run: |
-        docker build -t ghcr.io/JCARLOS3009/postgre-docker:latest -f Dockerfile .
-        docker tag ghcr.io/JCARLOS3009/postgre-docker:latest ghcr.io/JCARLOS3009/postgre-docker:${{ github.sha }}
+        docker build -t ghcr.io/jcarlos3009/postgre-docker:latest -f Dockerfile .
+        docker tag ghcr.io/jcarlos3009/postgre-docker:latest ghcr.io/jcarlos3009/postgre-docker:${{ github.sha }}
     
     - run: |
-        docker push ghcr.io/JCARLOS3009/postgre-docker:latest
-        docker push ghcr.io/JCARLOS3009/postgre-docker:${{ github.sha }}
+        docker push ghcr.io/jcarlos3009/postgre-docker:latest
+        docker push ghcr.io/jcarlos3009/postgre-docker:${{ github.sha }}
