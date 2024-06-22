@@ -7,7 +7,7 @@ npm install pg
 # Testar a conexão:
 Salve o código em um arquivo, por exemplo, conexao.js. Então, execute o arquivo usando Node.js:
 ```bash
-node conexao.js
+node database.js
 ```
 # Variáveis de ambiente: 
 Para manter credenciais seguras, usar variáveis de ambiente para armazenar suas configurações de conexão.
